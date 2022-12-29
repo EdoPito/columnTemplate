@@ -1,0 +1,133 @@
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+.gridContainer{
+
+    display: grid;
+    grid-auto-flow: column;
+    width: min(90%,53rem);
+    
+       
+}
+
+img{
+
+    margin: 30px;
+
+}
+
+h1{
+
+    margin: 20px;
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+}
+
+p{
+    margin: 20px;
+    width: 65%;
+    line-height: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.button{
+
+    margin: 70px 0px 50px 17px;
+    border: 2.5px solid hsl(0, 0%, 95%);
+    padding: 10px 30px;
+    border-radius: 20px;
+    
+}
+
+.sedans{
+
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suv{
+
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+
+    background-color: hsl(179, 100%, 13%);
+}
+
+.sedans>button{
+
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+.suv>button{
+
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+
+}
+
+.luxury>button{
+
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+@media (max-width:900px) {
+
+    .gridContainer{
+        
+        grid-auto-flow: row;
+        margin: 50px;
+        
+    }
+
+    
+    .sedans>button{
+
+        color: hsl(31, 77%, 52%);
+        background-color: hsl(0, 0%, 95%);
+    }
+
+    .suv>button{
+
+        color: hsl(184, 100%, 22%);
+        background-color: hsl(0, 0%, 95%);
+    
+    }
+
+    .luxury>button{
+
+    color: hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
+
+}
+    
+}
